@@ -1,15 +1,15 @@
 package utils
 
 import (
-  "time"
+	"time"
 )
 
 type function func()
 
 func TimeFuncs(fn function) int64 {
-  start := time.Now().UnixNano()
-  fn()
-  end := time.Now().UnixNano()
+	start := time.Now().UnixNano()
+	fn()
+	end := time.Now().UnixNano()
 
-  return end - start
+	return end - start
 }

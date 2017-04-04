@@ -1,15 +1,15 @@
 package clients
 
 import (
-  "log"
+	"log"
 )
 
 type Result struct {
-  Response string,
-  Latency uint64
+	Response string
+	Latency  uint64
 }
 
-func buildResult(res string, lat uint64) *Result{
-  res := Result{res, lat}
-  return res
+func buildResult(res string, lat uint64) *Result {
+	res := Result{res, lat}
+	return res
 }
